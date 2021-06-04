@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PLAY SYSTEM "play.dtd">
+<PLAY>
+  <TITLE>Drinking Bad Coffee</TITLE>
+  <SCNDESCR>SCENE 7 Eleven</SCNDESCR>
+  <PLAYSUBT>CAFE PLAY</PLAYSUBT>
+  <ACT>
+    <TITLE>ACT I</TITLE>
+    <SCENE>
+      <TITLE>SCENE I.  Nope.</TITLE>
+      <SPEECH>
+        <SPEAKER>Bob</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem delectus.</LINE>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi, nob.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Sheila</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Odio cu.</LINE>
+        <LINE>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellen.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Erik</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis ipsa fac.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Bob</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas enim earum ad molestias delenit.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Sheila</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, maxim.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Erik</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate dol.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Bob</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Sheila</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci distinctio quam fac.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Erik</SPEAKER>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing elit. M.</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>ALL</SPEAKER>
+        <LINE>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestias placeat omnis ver.</LINE>
+        <LINE>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio dign.</LINE>
+      </SPEECH>
+    </SCENE>
+  </ACT>
+</PLAY>
+

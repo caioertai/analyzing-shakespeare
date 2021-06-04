@@ -8,8 +8,12 @@ RSpec.describe Play do
   end
 
   context "#speeches" do
-    it "returns speeches" do
-      play.speeches
+    it "returns the correct amount of speeches" do
+      expect(play.speeches.count).to eq(10)
+    end
+
+    it "returns instances of speech" do
+      expect(play.speeches).to all(be_a(Speech))
     end
   end
 end

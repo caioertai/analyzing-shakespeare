@@ -1,7 +1,7 @@
-require_relative "../lib/play/speech"
+require_relative "../lib/speech"
 require "nokogiri"
 
-RSpec.describe Play::Speech do
+RSpec.describe Speech do
   let(:speech_xml) {
     <<-XML
       <SPEECH>

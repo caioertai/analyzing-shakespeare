@@ -1,4 +1,5 @@
 require "nokogiri"
+require_relative "speech"
 
 class Play
   def initialize(file_path)
@@ -6,7 +7,7 @@ class Play
   end
 
   def speeches
-    document.search("SPEECH")
+    document.search("SPEECH").map { |el| Speech.new(el) }
   end
 
   private

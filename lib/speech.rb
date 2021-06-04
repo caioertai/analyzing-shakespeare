@@ -1,4 +1,4 @@
-class Play::Speech
+class Speech
   def initialize(element)
     @element = element
   end

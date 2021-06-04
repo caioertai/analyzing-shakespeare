@@ -1,7 +1,15 @@
 require_relative "../lib/play"
 
 RSpec.describe Play do
+  let(:play) { Play.new("spec/support/play.xml") }
+
   it "initializes with a parsed XML document" do
-    Play.new("spec/support/macbeth.xml")
+    play
+  end
+
+  context "#speeches" do
+    it "returns speeches" do
+      play.speeches
+    end
   end
 end

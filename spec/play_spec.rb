@@ -1,4 +1,4 @@
-require_relative "../lib/play_spec"
+require_relative "../lib/play"
 
 RSpec.describe Play do
   it "initializes with a parsed XML document" do

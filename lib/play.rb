@@ -1,4 +1,5 @@
 require "nokogiri"
+require "ostruct"
 require_relative "speech"
 
 class Play
@@ -7,7 +8,17 @@ class Play
   end
 
   def speeches
-    document.search("SPEECH").map { |el| Speech.new(el) }
+    @speeches ||= document.search("SPEECH").map { |el| Speech.new(el) }
+  end
+
+  def speakers
+    speeches.map(&:speaker)
+  end
+
+  def speakers_count
+    speeches.each_with_object(Hash.new(0)) { |speech, object|
+      object[speech.speaker] += 1
+    }
   end
 
   private

@@ -1,5 +1,9 @@
 class Play::Speech
-  def initialize(xml_object)
-    @xml_object = xml_object
+  def initialize(element)
+    @element = element
+  end
+
+  def speaker
+    @element.at("SPEAKER").text.strip
   end
 end

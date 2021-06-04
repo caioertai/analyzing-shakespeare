@@ -1,7 +1,8 @@
 require_relative "../lib/play/speech"
+require "nokogiri"
 
 RSpec.describe Play::Speech do
-  let(:speech_xml_doc) {
+  let(:speech_xml) {
     <<-XML
       <SPEECH>
         <SPEAKER>Sheila</SPEAKER>
@@ -10,8 +11,18 @@ RSpec.describe Play::Speech do
       </SPEECH>
     XML
   }
+  let(:speech_xml_element) {
+    Nokogiri::XML.parse(speech_xml).at("SPEECH")
+  }
+  let(:speech) { described_class.new(speech_xml_element) }
 
   it "initializes with a parsed XML document" do
-    described_class.new(speech_xml_doc)
+    speech
+  end
+
+  describe "#speaker" do
+    it "returns the correct speaker" do
+      expect(speech.speaker).to eq("Sheila")
+    end
   end
 end

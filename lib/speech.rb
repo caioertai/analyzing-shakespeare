@@ -4,6 +4,6 @@ class Speech
   end
 
   def speaker
-    @element.at("SPEAKER").text.strip
+    @element.at("SPEAKER").text.strip.split.map(&:capitalize).join(" ")
   end
 end

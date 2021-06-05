@@ -1,4 +1,5 @@
 require "nokogiri"
+require "open-uri"
 require "ostruct"
 require_relative "speech"
 

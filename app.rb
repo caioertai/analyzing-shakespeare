@@ -1,9 +1,12 @@
-require "nokogiri"
+require_relative "lib/play"
 require "open-uri"
-require "pry-byebug"
 
-xml_url = "https://www.ibiblio.org/xml/examples/shakespeare/macbeth.xml"
-doc = Nokogiri::XML.parse(open(xml_url))
-binding.pry
-
-puts ""
+play_url = "https://www.ibiblio.org/xml/examples/shakespeare/macbeth.xml"
+play = Play.new(play_url)
+play
+  .speakers_count
+  .sort_by { |_, count| -count }
+  .to_h
+  .each do |speaker, count|
+    puts "#{count} #{speaker}"
+  end

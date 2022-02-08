@@ -4,6 +4,11 @@ class Speech
   end
 
   def speaker
-    @element.at("SPEAKER").text.strip.split.map(&:capitalize).join(" ")
+    @element
+      .at("SPEAKER")
+      .text.strip.split
+      .map(&:capitalize)
+      .join(" ")
+      .gsub(/^all$/i, "ALL")
   end
 end
